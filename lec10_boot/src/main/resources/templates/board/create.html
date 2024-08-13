@@ -47,7 +47,8 @@
 							Swal.fire({
 								icon :'success',
 								title:'성공',
-								text : data.res_msg
+								text : data.res_msg,
+								confirmButtonText : "닫기"
 							}).then((result)=>{
 								location.href="/board";
 							});
@@ -55,7 +56,8 @@
 							Swal.fire({
 								icon:'error',
 								title:'실패',
-								text: data.res_msg
+								text: data.res_msg,
+								confirmButtonText : "닫기"
 							})
 						}
 						
